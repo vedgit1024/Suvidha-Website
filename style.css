@@ -246,6 +246,11 @@ nav {
     width: 80%; /* Sidebar width for small screens */
   }
 }
+@media (max-width: 480px) {
+  .logo {
+    transform: scale(0.8);
+  }
+}
 
 /* Sliding Animation */
 @keyframes slideInRight {
@@ -478,7 +483,7 @@ nav {
   height: 80vh; /* Keep aspect ratio */
   object-fit: cover;
   min-height: 100%;
-  filter: brightness(0.4);
+  filter: brightness(0.3);
 }
 
 .content-overlay {
@@ -491,13 +496,13 @@ nav {
   width: 60vw;
   height: auto;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   border-radius: 10px;
   max-width: 800px;
 }
 
 .content-overlay h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   color: #f89d2d;
   margin-bottom: 10px;
   letter-spacing: 1px;
@@ -514,7 +519,7 @@ nav {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #f89d2d;
   background: transparent;
   border: 2px solid #f89d2d;
@@ -544,7 +549,14 @@ nav {
     font-size: 1.5em;
   }
 }
-
+@media (max-width: 480px) {
+  .content-overlay h2 {
+    font-size: 1.5rem;
+  }
+  .content-overlay p {
+    font-size: 1.2rem;
+  }
+}
 .sustainable-causes {
   padding: 60px 20px;
   text-align: center;
@@ -866,6 +878,12 @@ nav {
     align-items: flex-start;
     /* justify-content: center; */
   }
+  .our-reach-data h2 {
+    font-size: 2rem;
+  }
+  .our-reach-data h3 {
+    font-size: 2rem;
+  }
 }
 
 .team-section {
@@ -1015,7 +1033,7 @@ nav {
     height: auto; /* Maintain aspect ratio */
   }
   .overlay {
-    bottom: -10%;
+    bottom: -8%;
   }
 }
 
@@ -1027,7 +1045,7 @@ nav {
   }
 
   .team-container {
-    gap: 10px; /* Reduce gap between members */
+    gap: 30px; /* Reduce gap between members */
   }
 
   .overlay h4,
@@ -1036,7 +1054,7 @@ nav {
     font-size: 1.2rem; /* Adjust overlay text sizes */
   }
   .overlay {
-    bottom: -14%;
+    bottom: -16%;
   }
 }
 
