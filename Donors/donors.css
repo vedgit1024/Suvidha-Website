@@ -1,0 +1,262 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Inter" !important;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111315;
+  padding: 1.5rem;
+  position: relative;
+  height: 12rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  margin-left: 1.5rem;
+  width: auto;
+  height: 8rem; /* Large logo for better visibility */
+  object-fit: contain;
+}
+
+/* Links in nav bar */
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fab005;
+}
+
+.nav-link:hover {
+  color: #ffd43b;
+  transition-duration: 300ms;
+  transform: scale(1.1);
+}
+@media (max-width: 1100px) {
+  .nav-links a {
+    font-size: 1.8rem;
+  }
+  .nav-links {
+    gap: 2rem;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  background-color: #111315;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 6rem; /* Push links below logo */
+  gap: 2rem;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.active {
+  display: flex;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.sidebar a {
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+  color: #fab005;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #ffd43b;
+}
+
+/* Menu Button */
+.menu-btn {
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: 0.5rem;
+  border: 1px solid #fab005;
+  font-size: 3.5rem;
+  color: #fab005;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  color: #ffd43b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .logo {
+    height: 10rem; /* Larger for visibility */
+  }
+
+  .sidebar {
+    width: 80%; /* Sidebar width for small screens */
+  }
+}
+
+.image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("help-bg-image.png");
+
+  height: 60vh;
+  background-size: cover;
+  background-position: center 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image p {
+  font-family: "Quicksand";
+  font-weight: 550;
+  margin-top: 10%;
+  font-size: 4.4rem;
+  color: #fab005;
+}
+
+/* General Footer Styles */
+.footer {
+  background-color: #242424;
+  color: #fff;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #e69a2a; /* Golden Yellow Color */
+  margin-bottom: 24px;
+}
+
+.footer-section p,
+.footer-section li,
+strong {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+strong {
+  color: #e69a2a;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  /* text-decoration: underline;
+   */
+  color: #e69a2a;
+}
+
+.social-buttons {
+  margin-top: 10px;
+}
+
+.social-button {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: 1px solid #f5b941;
+  color: #f5b941;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #f5b941;
+  color: #242424;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.footer-bottom a {
+  color: #f5b941;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #e69a2a;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f5b941;
+  color: #242424;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+}
