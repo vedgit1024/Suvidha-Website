@@ -57,7 +57,11 @@ nav {
     gap: 2rem;
   }
 }
-
+@media (max-width: 480px) {
+  .logo {
+    transform: scale(0.8);
+  }
+}
 /* Sidebar */
 .sidebar {
   display: none;
