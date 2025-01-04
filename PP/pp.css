@@ -230,7 +230,7 @@ nav {
 }
 
 .footer-section h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   color: #e69a2a; /* Golden Yellow Color */
   margin-bottom: 24px;
@@ -239,8 +239,8 @@ nav {
 .footer-section p,
 .footer-section li,
 strong {
-  font-size: 1.5rem;
-  line-height: 1.6;
+  font-size: 1.4rem;
+  line-height: 1.2;
 }
 strong {
   color: #e69a2a;
@@ -255,14 +255,12 @@ strong {
 .footer-section ul li a {
   display: inline-block;
   color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
   text-decoration: none;
 }
 
 .footer-section ul li a:hover {
-  /* text-decoration: underline;
-   */
   color: #e69a2a;
 }
 

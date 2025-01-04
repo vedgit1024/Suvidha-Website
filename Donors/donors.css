@@ -6,7 +6,6 @@
   font-size: 10px;
   font-family: "Inter" !important;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -14,10 +13,10 @@ nav {
   background-color: #111315;
   padding: 1.5rem;
   position: relative;
-  height: 12rem;
+  height: 10rem;
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 3000;
   top: 0;
   left: 0;
 }
@@ -25,18 +24,18 @@ nav {
 .logo {
   margin-left: 1.5rem;
   width: auto;
-  height: 8rem; /* Large logo for better visibility */
+  height: 7rem; /* Large logo for better visibility */
   object-fit: contain;
 }
 
 /* Links in nav bar */
 .nav-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .nav-link {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #fab005;
 }
@@ -46,25 +45,12 @@ nav {
   transition-duration: 300ms;
   transform: scale(1.1);
 }
-@media (max-width: 1100px) {
-  .nav-links a {
-    font-size: 1.8rem;
-  }
-  .nav-links {
-    gap: 2rem;
-  }
-}
-@media (max-width: 480px) {
-  .logo {
-    transform: scale(0.8);
-  }
-}
 
 /* Sidebar */
 .sidebar {
   display: none;
   position: fixed;
-  top: 3rem;
+  top: 10rem;
   left: 0;
   height: 100%;
   width: 70%;
@@ -81,7 +67,7 @@ nav {
 .sidebar.active {
   display: flex;
   transform: translateX(0);
-  z-index: 1;
+  z-index: 3000;
 }
 
 .sidebar a {
@@ -99,13 +85,13 @@ nav {
 /* Menu Button */
 .menu-btn {
   display: none;
-  position: absolute;
-  top: 4.5rem;
+  position: fixed;
+  top: 4rem;
   left: 0.5rem;
   border: 1px solid #fab005;
   font-size: 3.5rem;
   color: #fab005;
-  z-index: 1100;
+  z-index: 3100;
   cursor: pointer;
 }
 
@@ -123,13 +109,21 @@ nav {
     display: block;
   }
 
-  .logo {
-    height: 10rem; /* Larger for visibility */
-  }
-
   .sidebar {
     width: 80%; /* Sidebar width for small screens */
   }
+  .btn-now {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    transform: scale(0.8);
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .image {
@@ -173,7 +167,7 @@ nav {
 }
 
 .footer-section h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   color: #e69a2a; /* Golden Yellow Color */
   margin-bottom: 24px;
@@ -182,8 +176,8 @@ nav {
 .footer-section p,
 .footer-section li,
 strong {
-  font-size: 1.5rem;
-  line-height: 1.6;
+  font-size: 1.4rem;
+  line-height: 1.2;
 }
 strong {
   color: #e69a2a;
@@ -198,14 +192,12 @@ strong {
 .footer-section ul li a {
   display: inline-block;
   color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
   text-decoration: none;
 }
 
 .footer-section ul li a:hover {
-  /* text-decoration: underline;
-   */
   color: #e69a2a;
 }
 
