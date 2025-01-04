@@ -15,7 +15,7 @@ const carouselImages = [
   { src: "carousalImages/caroImg9.png", text: "" },
   {
     src: "carousalImages/caroImg10.png",
-    text: "Culivating a Greener Planet with Suvidha",
+    text: "Cultivating a Greener Planet with Suvidha",
     video: "Suvidha_Foundation_Video.mp4",
   },
   {
