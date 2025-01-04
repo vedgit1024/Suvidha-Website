@@ -1,79 +1,13 @@
 const menuBtn = document.querySelector(".menu-btn");
 const sidebar = document.querySelector(".sidebar");
 
+const body = document.body;
+
 menuBtn.addEventListener("click", () => {
   sidebar.classList.toggle("active");
+  body.classList.toggle("no-scroll");
 });
 
-// Carousel Slider Functionality
-// const carouselImages = [
-//   "suvidhaClassImg.png", // Replace with your actual image paths
-//   "annie-spratt-r9eIL7jtenc-unsplash.jpg",
-//   "suvidhaClassImg.png",
-// ];
-// const carouselImgElement = document.querySelector(".carousal-img img");
-// const btnLeft = document.querySelector(".btn-left");
-// const btnRight = document.querySelector(".btn-right");
-
-// let currentIndex = 0;
-
-// // Function to update the carousel image with animation
-// function updateCarousel(direction) {
-//   carouselImgElement.classList.remove("slide-in-right", "slide-in-left");
-//   void carouselImgElement.offsetWidth; // Trigger reflow to restart animation
-
-//   if (direction === "right") {
-//     carouselImgElement.classList.add("slide-in-right");
-//   } else if (direction === "left") {
-//     carouselImgElement.classList.add("slide-in-left");
-//   }
-
-//   setTimeout(() => {
-//     carouselImgElement.src = carouselImages[currentIndex];
-//   }, 1); // Wait for the animation to complete before changing the image
-// }
-
-// // Event listeners for buttons
-// btnLeft.addEventListener("click", () => {
-//   currentIndex =
-//     (currentIndex - 1 + carouselImages.length) % carouselImages.length;
-//   updateCarousel("left");
-// });
-
-// btnRight.addEventListener("click", () => {
-//   currentIndex = (currentIndex + 1) % carouselImages.length;
-//   updateCarousel("right");
-// });
-
-// // Initialize the carousel with the first image
-// carouselImgElement.src = carouselImages[currentIndex];
-
-// let autoChangeInterval = setInterval(() => {
-//   currentIndex = (currentIndex + 1) % carouselImages.length;
-//   updateCarousel("right");
-// }, 4000);
-
-// // Stop autoplay on manual click
-// btnLeft.addEventListener("click", () => {
-//   currentIndex =
-//     (currentIndex - 1 + carouselImages.length) % carouselImages.length;
-//   updateCarousel("left");
-//   clearInterval(autoChangeInterval); // Stop autoplay
-//   autoChangeInterval = setInterval(() => {
-//     currentIndex = (currentIndex + 1) % carouselImages.length;
-//     updateCarousel("right");
-//   }, 4000); // Restart autoplay
-// });
-
-// btnRight.addEventListener("click", () => {
-//   currentIndex = (currentIndex + 1) % carouselImages.length;
-//   updateCarousel("right");
-//   clearInterval(autoChangeInterval); // Stop autoplay
-//   autoChangeInterval = setInterval(() => {
-//     currentIndex = (currentIndex + 1) % carouselImages.length;
-//     updateCarousel("right");
-//   }, 4000); // Restart autoplay
-// });
 const carouselImages = [
   { src: "carousalImages/caroImg6.png", text: "" },
   { src: "carousalImages/caroImg7.png", text: "" },
