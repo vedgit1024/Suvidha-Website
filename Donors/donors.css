@@ -207,9 +207,9 @@ strong {
 
 .social-button {
   display: inline-block;
-  padding: 8px 15px;
+  /* padding: 8px 15px; */
   margin-right: 10px;
-  border: 1px solid #f5b941;
+  /* border: 1px solid #f5b941; */
   color: #f5b941;
   text-decoration: none;
   font-size: 14px;
@@ -218,7 +218,9 @@ strong {
 }
 
 .social-button:hover {
-  background-color: #f5b941;
+  /* background-color: #f5b941; */
+  transform: scale(1.05);
+  filter: brightness(1.2);
   color: #242424;
 }
 
